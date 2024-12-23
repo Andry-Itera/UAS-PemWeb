@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi Klinik Kesehatan Kasih Ibu</title>
+    <link rel="stylesheet" href="style.css"> <!-- Hubungkan ke file CSS -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container index-container">
+        <h1>Registrasi Karyawan Klinik Kesehatan Kasih Ibu</h1>
+
+        <!-- Form Registrasi -->
+        <form id="registerForm" action="registrasi.php" method="POST">
+            <div class="form-group">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="nama" required placeholder="Masukkan Nama Lengkap">
+            </div>
+        
+            <div class="form-group">
+                <label for="employeeId">ID Karyawan:</label>
+                <input type="text" id="employeeId" name="id_karyawan" required placeholder="Masukkan ID Karyawan (IDxxxx)">
+            </div>
+        
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Masukkan Email">
+            </div>
+        
+            <div class="form-group">
+                <label for="gender">Jenis Kelamin:</label>
+                <select id="gender" name="jenis_kelamin" required>
+                    <option value="" disabled selected>Pilih Jenis Kelamin</option>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+            </div>
+        
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Masukkan Password">
+            </div>
+        
+            <div class="form-group">
+                <label for="confirmPassword">Konfirmasi Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Konfirmasi Password">
+            </div>
+        
+            <div class="form-group">
+                <label for="position">Jabatan:</label>
+                <input type="text" id="position" name="jabatan" required placeholder="Masukkan Jabatan">
+            </div>
+        
+            <button type="submit" class="btn">Registrasi</button>
+        </form>        
+    </div>
+</body>
+</html>

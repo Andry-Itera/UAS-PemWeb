@@ -1,0 +1,277 @@
+/* Reset beberapa default CSS untuk memastikan konsistensi tampilan di semua browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #A1C4FD, #C2E9FB); /* Background dengan gradasi biru lembut */
+    color: #333; /* Warna teks utama */
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* ===== STYLE UNTUK HALAMAN index.html ===== */
+.index-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 90%;
+    max-width: 600px; /* Lebar maksimum untuk form registrasi*/
+    margin: 20px auto;
+}
+
+.index-container h1 {
+    color: #2e8b57;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.index-container form {
+    width: 100%;
+}
+
+.index-container .form-group {
+    margin-bottom: 15px;
+}
+
+.index-container label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.index-container input, .index-container select {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.index-container input:focus, .index-container select:focus {
+    border-color: #2e8b57;
+    outline: none;
+}
+
+.index-container button {
+    background-color: #2e8b57;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; 
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.index-container button:hover {
+    background-color: #276c47;
+}
+
+/* ===== STYLE UNTUK HALAMAN data-karyawan.php ===== */
+.data-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px; 
+    margin: 20px auto;
+    overflow-x: auto; 
+}
+
+.data-container h1 {
+    color: #2e8b57;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.data-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.data-container table th, .data-container table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+    word-wrap: break-word; 
+}
+
+.data-container table th {
+    background-color: #2e8b57;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.data-container table tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+.data-container table tr:hover {
+    background-color: #f1f1f1; /* Warna saat hover */
+}
+
+.data-container .action-buttons button {
+    padding: 8px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 5px;
+}
+
+.data-container .action-buttons .btn-edit {
+    background-color: #007BFF; 
+}
+
+.data-container .action-buttons .btn-edit:hover {
+    background-color: #0056b3;
+}
+
+.data-container .action-buttons .btn-delete {
+    background-color: #DC3545; 
+}
+
+.data-container .action-buttons .btn-delete:hover {
+    background-color: #a71d2a;
+}
+
+/* Responsivitas untuk layar kecil */
+@media screen and (max-width: 768px) {
+    .index-container, .data-container {
+        padding: 20px;
+    }
+
+    .index-container input, .index-container select,
+    .index-container button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .data-container table th, .data-container table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .data-container .action-buttons button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
+/* ===== STYLE UNTUK TOMBOL KHUSUS ===== */
+.button-container button {
+    background-color: #28a745; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #218838; 
+}
+
+.data-container .action-buttons .btn-edit {
+    background-color: #007BFF; 
+}
+
+.data-container .action-buttons .btn-edit:hover {
+    background-color: #0056b3;
+}
+
+.data-container .action-buttons .btn-delete {
+    background-color: #DC3545; 
+}
+
+.data-container .action-buttons .btn-delete:hover {
+    background-color: #a71d2a;
+}
+
+/* ===== STYLE UNTUK HALAMAN edit.php ===== */
+.edit-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.edit-container h1 {
+    color: #2e8b57;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.edit-container form {
+    width: 100%;
+}
+
+.edit-container .form-group {
+    margin-bottom: 15px;
+}
+
+.edit-container label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.edit-container input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.edit-container input:focus {
+    border-color: #2e8b57;
+    outline: none;
+}
+
+.edit-container button {
+    background-color: #2e8b57; /* Hijau segar */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.edit-container button:hover {
+    background-color: #276c47;
+}
